@@ -1,191 +1,103 @@
 export default [
-  {
-      "_id": "A101",
-      "title": "Propulsion Assignment",
+    {
+      "id": 1,
       "course": "RS101",
-      "desc": "desc1",
-      "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 1,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 8,
-          "hour": 0,
-          "minute": 0
-      }
-  },
-  {
-      "_id": "A102",
-      "title": "Combustion Analysis",
+      "quiz type": "Graded Quiz",
+      "points": 50,
+      "number of questions": 10,
+      "assignment group": "Quizzes",
+      "shuffle answers": "Yes",
+      "time limit": "20 Minutes",
+      "multiple attempts": "No",
+      "how many attempts": 1,
+      "show correct answers": "After Due Date",
+      "access code": "",
+      "one question at a time": "Yes",
+      "webcam required": "No",
+      "lock questions after answering": "No",
+      "due date": "2025-04-10",
+      "available date": "2025-04-01",
+      "until date": "2025-04-11"
+    },
+    {
+      "id": 2,
+      "course": "RS102",
+      "quiz type": "Practice Quiz",
+      "points": 30,
+      "number of questions": 6,
+      "assignment group": "Exams",
+      "shuffle answers": "No",
+      "time limit": "30 Minutes",
+      "multiple attempts": "Yes",
+      "how many attempts": 3,
+      "show correct answers": "Immediately",
+      "access code": "QUIZ123",
+      "one question at a time": "No",
+      "webcam required": "No",
+      "lock questions after answering": "No",
+      "due date": "2025-04-15",
+      "available date": "2025-04-10",
+      "until date": "2025-04-16"
+    },
+    {
+      "id": 3,
       "course": "RS101",
-      "desc": "desc2",
-      "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 2,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 9,
-          "hour": 0,
-          "minute": 0
-      }
-  },
-  {
-      "_id": "A103",
-      "title": "Nozzle Design Project",
+      "quiz type": "Graded Survey",
+      "points": 10,
+      "number of questions": 5,
+      "assignment group": "Assignments",
+      "shuffle answers": "Yes",
+      "time limit": "20 Minutes",
+      "multiple attempts": "No",
+      "how many attempts": 1,
+      "show correct answers": "Never",
+      "access code": "SURVEY2025",
+      "one question at a time": "Yes",
+      "webcam required": "No",
+      "lock questions after answering": "Yes",
+      "due date": "2025-04-20",
+      "available date": "2025-04-18",
+      "until date": "2025-04-21"
+    },
+    {
+      "id": 4,
+      "course": "RS102",
+      "quiz type": "Ungraded Survey",
+      "points": 0,
+      "number of questions": 8,
+      "assignment group": "Project",
+      "shuffle answers": "No",
+      "time limit": "No Limit",
+      "multiple attempts": "Yes",
+      "how many attempts": 5,
+      "show correct answers": "Always",
+      "access code": "",
+      "one question at a time": "No",
+      "webcam required": "No",
+      "lock questions after answering": "No",
+      "due date": "2025-04-25",
+      "available date": "2025-04-20",
+      "until date": "2025-04-26"
+    },
+    {
+      "id": 5,
       "course": "RS101",
-      "desc": "desc3",
+      "quiz type": "Graded Quiz",
       "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 3,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 10,
-          "hour": 0,
-          "minute": 0
-      }
-  },
-  {
-      "_id": "A201",
-      "title": "Aerodynamics Quiz",
-      "course": "RS102",
-      "desc": "desc4",
-      "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 4,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 11,
-          "hour": 0,
-          "minute": 0
-      }
-  },
-  {
-      "_id": "A202",
-      "title": "Flow Analysis",
-      "course": "RS102",
-      "desc": "desc5",
-      "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 5,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 12,
-          "hour": 0,
-          "minute": 0
-      }
-  },
-  {
-      "_id": "A203",
-      "title": "Heating Analysis",
-      "course": "RS102",
-      "desc": "desc6",
-      "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 6,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 13,
-          "hour": 0,
-          "minute": 0
-      }
-  },
-  {
-      "_id": "A301",
-      "title": "Structural Design Task",
-      "course": "RS103",
-      "desc": "desc7",
-      "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 7,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 14,
-          "hour": 0,
-          "minute": 0
-      }
-  },
-  {
-      "_id": "A302",
-      "title": "Orbital Calculations",
-      "course": "RS103",
-      "desc": "desc8",
-      "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 8,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 15,
-          "hour": 0,
-          "minute": 0
-      }
-  },
-  {
-      "_id": "A303",
-      "title": "Systems Engineering Exam",
-      "course": "RS103",
-      "desc": "desc9",
-      "points": 100,
-      "availableDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 9,
-          "hour": 0,
-          "minute": 0
-      },
-      "dueDate": {
-          "year": 2025,
-          "month": 5,
-          "day": 16,
-          "hour": 0,
-          "minute": 0
-      }
-  }
-];
+      "number of questions": 20,
+      "assignment group": "Exams",
+      "shuffle answers": "Yes",
+      "time limit": "45 Minutes",
+      "multiple attempts": "No",
+      "how many attempts": 1,
+      "show correct answers": "After Until Date",
+      "access code": "FINAL2025",
+      "one question at a time": "Yes",
+      "webcam required": "Yes",
+      "lock questions after answering": "Yes",
+      "due date": "2025-05-05",
+      "available date": "2025-05-01",
+      "until date": "2025-05-06"
+    }
+  ];
+  
