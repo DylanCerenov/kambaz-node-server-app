@@ -3,7 +3,6 @@ import { v4 as uuidv4 } from "uuid";
 
 export function findQuizzesForCourse(courseName) {
   const { quizzes } = Database; 
-  // Compare by the course name, because using the UUID is inconvenient. 
   return quizzes.filter((quiz) => quiz.course === courseName);
 }
 
