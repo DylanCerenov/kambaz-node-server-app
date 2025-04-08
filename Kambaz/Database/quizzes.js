@@ -1,6 +1,7 @@
 export default [
   {
     "_id": "Q1", // string
+    "title": "Title 1 :)",
     "course": "RS101",
     "quiz type": "Graded Quiz",
     "points": 50,
@@ -21,6 +22,7 @@ export default [
   },
   {
     "_id": "2",
+    "title": "Title 2 :-)",
     "course": "RS102",
     "quiz type": "Practice Quiz",
     "points": 30,
@@ -42,6 +44,7 @@ export default [
   {
     "_id": "3",
     "course": "RS101",
+    "title": "Title 3 :3",
     "quiz type": "Graded Survey",
     "points": 10,
     "number of questions": 5,
@@ -61,6 +64,7 @@ export default [
   },
   {
     "_id": "4",
+    "title": "Title 4 :)",
     "course": "RS102",
     "quiz type": "Ungraded Survey",
     "points": 0,
@@ -81,6 +85,7 @@ export default [
   },
   {
     "_id": "5",
+    "title": "Title 5 :D",
     "course": "RS101",
     "quiz type": "Graded Quiz",
     "points": 100,
