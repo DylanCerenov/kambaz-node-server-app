@@ -1,6 +1,6 @@
 export default [
   {
-    "id": 1,
+    "_id": "Q1", // string
     "course": "RS101",
     "quiz type": "Graded Quiz",
     "points": 50,
@@ -20,7 +20,7 @@ export default [
     "until date": "2025-04-11"
   },
   {
-    "id": 2,
+    "_id": "2",
     "course": "RS102",
     "quiz type": "Practice Quiz",
     "points": 30,
@@ -40,7 +40,7 @@ export default [
     "until date": "2025-04-16"
   },
   {
-    "id": 3,
+    "_id": "3",
     "course": "RS101",
     "quiz type": "Graded Survey",
     "points": 10,
@@ -60,7 +60,7 @@ export default [
     "until date": "2025-04-21"
   },
   {
-    "id": 4,
+    "_id": "4",
     "course": "RS102",
     "quiz type": "Ungraded Survey",
     "points": 0,
@@ -80,7 +80,7 @@ export default [
     "until date": "2025-04-26"
   },
   {
-    "id": 5,
+    "_id": "5",
     "course": "RS101",
     "quiz type": "Graded Quiz",
     "points": 100,

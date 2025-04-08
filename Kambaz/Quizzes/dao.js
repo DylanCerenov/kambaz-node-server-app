@@ -16,9 +16,9 @@ export function createQuiz(quiz) {
 export function deleteQuiz(quizId) {
   const { quizzes } = Database;
   Database.quizzes = quizzes.filter((quiz) => quiz._id !== quizId);
- }
+}
  
- export function updateQuiz(quizId, quizUpdates) {
+export function updateQuiz(quizId, quizUpdates) {
   const { quizzes } = Database;
   const quiz = quizzes.find((quiz) => quiz._id === quizId);
   Object.assign(quiz, quizUpdates);
