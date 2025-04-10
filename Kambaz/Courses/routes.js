@@ -57,10 +57,12 @@ export default function CourseRoutes(app) {
 
   // Create a course 
   app.post("/api/courses", async (req, res) => {
-    const currentUser = req.session["currentUser"];
     const newCourse = await dao.createCourse(req.body);
     // Creator must always be enrolled in. 
-    await enrollmentsDao.enrollUserInCourse(currentUser._id, newCourse._id);
+    const currentUser = req.session["currentUser"];
+    if (currentUser) {
+      await enrollmentsDao.enrollUserInCourse(currentUser._id, newCourse._id);
+    }
     res.json(newCourse);
   });
 }
