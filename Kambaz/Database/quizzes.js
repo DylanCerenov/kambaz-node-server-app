@@ -117,7 +117,7 @@ export default [
         ]
       },
       {
-        "questionId": "Q1-TF1",
+        "questionId": "Q2-TF1",
         "type": "true_false",
         "title": "T/F Question Example",
         "points": 5,
@@ -125,7 +125,7 @@ export default [
         "correctAnswerIsTrue": true
       },
       {
-        "questionId": "Q1-FB1",
+        "questionId": "Q2-FB1",
         "type": "fill_in_blank",
         "title": "Fill-in-the-Blank Question Example",
         "points": 5,
