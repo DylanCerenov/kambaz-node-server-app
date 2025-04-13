@@ -1,11 +1,11 @@
 export default [
   {
-    "_id": "Q1", // string
+    "_id": "Q1",
     "title": "Title 1 :)",
     "course": "RS101",
     "quiz type": "Graded Quiz",
     "points": 50,
-    "number of questions": 10,
+    "number of questions": 3,
     "assignment group": "Quizzes",
     "shuffle answers": "Yes",
     "time limit": "20 Minutes",
@@ -18,7 +18,59 @@ export default [
     "lock questions after answering": "No",
     "due date": "2025-04-10",
     "available date": "2025-04-01",
-    "until date": "2025-04-11"
+    "until date": "2025-04-11",
+    "questions": [
+      {
+        "questionId": "Q1-MC1",
+        "type": "multiple_choice",
+        "points": 5,
+        "question": "Which of the following is correct?",
+        "choices": [
+          {
+            "id": "choiceA",
+            "text": "2 + 2 = 5",
+            "isCorrect": false
+          },
+          {
+            "id": "choiceB",
+            "text": "2 + 2 = 4",
+            "isCorrect": true
+          },
+          {
+            "id": "choiceC",
+            "text": "The mitochondria is not the powerhouse of the cell",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "questionId": "Q1-TF1",
+        "type": "true_false",
+        "title": "T/F Question Example",
+        "points": 5,
+        "question": "The sky is blue.",
+        "correctAnswerIsTrue": true
+      },
+      {
+        "questionId": "Q1-FB1",
+        "type": "fill_in_blank",
+        "title": "Fill-in-the-Blank Question Example",
+        "points": 5,
+        "question": "The capital of France is _____.",
+        "possibleAnswers": [
+          {
+            "id": "answer1",
+            "text": "Paris",
+            "caseInsensitive": true
+          },
+          {
+            "id": "answer2",
+            "text": "PARIS",
+            "caseInsensitive": true
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "2",
@@ -26,7 +78,7 @@ export default [
     "course": "RS102",
     "quiz type": "Practice Quiz",
     "points": 30,
-    "number of questions": 6,
+    "number of questions": 3,
     "assignment group": "Exams",
     "shuffle answers": "No",
     "time limit": "30 Minutes",
@@ -39,12 +91,64 @@ export default [
     "lock questions after answering": "No",
     "due date": "2025-04-15",
     "available date": "2025-04-10",
-    "until date": "2025-04-16"
+    "until date": "2025-04-16",
+    "questions": [
+      {
+        "questionId": "Q2-MC1",
+        "type": "multiple_choice",
+        "points": 5,
+        "question": "Which of the following is correct?",
+        "choices": [
+          {
+            "id": "choiceA",
+            "text": "sun is blue",
+            "isCorrect": false
+          },
+          {
+            "id": "choiceB",
+            "text": "The roman empire was founded in the year 27 B.C. by Augustus Ceasar.",
+            "isCorrect": true
+          },
+          {
+            "id": "choiceC",
+            "text": "sky is yellow",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "questionId": "Q1-TF1",
+        "type": "true_false",
+        "title": "T/F Question Example",
+        "points": 5,
+        "question": "The sky is blue.",
+        "correctAnswerIsTrue": true
+      },
+      {
+        "questionId": "Q1-FB1",
+        "type": "fill_in_blank",
+        "title": "Fill-in-the-Blank Question Example",
+        "points": 5,
+        "question": "The capital of Kazakhstan is _____.",
+        "possibleAnswers": [
+          {
+            "id": "answer1",
+            "text": "Astana",
+            "caseInsensitive": true
+          },
+          {
+            "id": "answer2",
+            "text": "ASTANA",
+            "caseInsensitive": true
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "3",
-    "course": "RS101",
     "title": "Title 3 :3",
+    "course": "RS101",
     "quiz type": "Graded Survey",
     "points": 10,
     "number of questions": 5,
@@ -60,7 +164,8 @@ export default [
     "lock questions after answering": "Yes",
     "due date": "2025-04-20",
     "available date": "2025-04-18",
-    "until date": "2025-04-21"
+    "until date": "2025-04-21",
+    "questions": []
   },
   {
     "_id": "4",
@@ -81,7 +186,8 @@ export default [
     "lock questions after answering": "No",
     "due date": "2025-04-25",
     "available date": "2025-04-20",
-    "until date": "2025-04-26"
+    "until date": "2025-04-26",
+    "questions": []
   },
   {
     "_id": "5",
@@ -102,6 +208,7 @@ export default [
     "lock questions after answering": "Yes",
     "due date": "2025-05-05",
     "available date": "2025-05-01",
-    "until date": "2025-05-06"
+    "until date": "2025-05-06",
+    "questions": []
   }
 ];
