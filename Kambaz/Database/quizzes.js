@@ -23,6 +23,7 @@ export default [
       {
         questionId: "Q1-MC1",
         type: "multiple_choice",
+        title: "Question 1 Title",
         points: 5,
         question: "Which of the following is correct?",
         choices: [
@@ -76,6 +77,7 @@ export default [
       {
         questionId: "Q2-MC1",
         type: "multiple_choice",
+        title: "Question 1 Title",
         points: 5,
         question: "Which of the following is correct?",
         choices: [
