@@ -18,17 +18,17 @@ export default function QuizzesRoutes(app) {
 
   // Create a new quiz.
   app.post("/api/courses/:courseId/quizzes", (req, res) => {
-      const { courseId } = req.params;
+    const { courseId } = req.params;
 
-      const quiz = {
-        ...req.body,
-        _id: uuidv4(),
-        course: courseId,
-      };
+    const quiz = {
+      ...req.body,
+      _id: uuidv4(),
+      course: courseId,
+    };
 
-      const newQuiz = quizzesDao.createQuiz(quiz);
-      res.send(newQuiz);
-    });
+    const newQuiz = quizzesDao.createQuiz(quiz);
+    res.send(newQuiz);
+  });
 
   // Updates a given quiz.
   app.put("/api/quizzes/:quizId", async (req, res) => {
@@ -43,5 +43,18 @@ export default function QuizzesRoutes(app) {
     const questionUpdates = req.body; 
     const status = await quizzesDao.updateQuizQuestion(quizId, questionId, questionUpdates);
     res.send(status); 
+  });
+
+  // Create a new question for a quiz. 
+  app.post("/api/quizzes/:quizId", async (req, res) => {
+    const { quizId } = req.params; 
+
+    const question = {
+      ...req.body, 
+      questionId: uuidv4(),
+    }
+    
+    const newQuiz = quizzesDao.createQuizQuestion(quizId, question);
+    res.send(newQuiz);
   });
 }

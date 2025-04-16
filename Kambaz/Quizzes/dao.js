@@ -36,3 +36,14 @@ export function updateQuizQuestion(quizId, questionId, questionUpdates) {
   Object.assign(question, questionUpdates);
   return quiz;
 }
+
+export function createQuizQuestion(quizId, question) {
+  const { quizzes } = Database;
+  const quiz = quizzes.find((quiz) => quiz._id === quizId);
+  
+  if (!quiz) return null;
+  if (!question) return null;
+
+  quiz.questions = [...quiz.questions, question];
+  return quiz;
+}
