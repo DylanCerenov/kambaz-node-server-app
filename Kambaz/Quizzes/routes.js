@@ -57,4 +57,10 @@ export default function QuizzesRoutes(app) {
     const newQuiz = quizzesDao.createQuizQuestion(quizId, question);
     res.send(newQuiz);
   });
+
+  app.delete("/api/quizzes/:quizId/:questionId", async (req, res) => {
+    const { quizId, questionId } = req.params; 
+    const status = await quizzesDao.deleteQuizQuestion(quizId, questionId);
+    res.send(status); 
+  });
 }

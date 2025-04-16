@@ -52,3 +52,16 @@ export function createQuizQuestion(quizId, question) {
 
   return quiz;
 }
+
+export function deleteQuizQuestion(quizId, questionId) {
+  const { quizzes } = Database;
+  const quiz = quizzes.find((quiz) => quiz._id === quizId);
+  
+  if (!quiz) return null;
+
+  const question = quiz.questions.find((q) => q.questionId === questionId);
+  if (!question) return null;
+
+  quiz.questions = quiz.questions.filter((question) => question.questionId !== questionId);
+  return quiz;
+}
