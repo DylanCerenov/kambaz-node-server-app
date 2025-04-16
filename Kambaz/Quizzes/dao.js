@@ -44,6 +44,11 @@ export function createQuizQuestion(quizId, question) {
   if (!quiz) return null;
   if (!question) return null;
 
-  quiz.questions = [...quiz.questions, question];
+  if (quiz.questions) {
+    quiz.questions = [...quiz.questions, question];
+  } else {
+    quiz.questions = [question]
+  }
+
   return quiz;
 }
