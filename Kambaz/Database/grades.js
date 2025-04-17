@@ -1,15 +1,15 @@
 export default [
-  {
-    "quizId": "Q1",
-    "userId": "234",
-    "attemptsCount": 1,
-    "score": 10,
-    "answers": {
-        "Q1-MC1": "choiceB",
-        "Q1-TF1": true,
-        "Q1-FB1": "P"
-    }
-  }
+  // {
+  //   "quizId": "Q1",
+  //   "userId": "234",
+  //   "attemptsCount": 1,
+  //   "score": 10,
+  //   "answers": {
+  //       "Q1-MC1": "choiceB",
+  //       "Q1-TF1": true,
+  //       "Q1-FB1": "P"
+  //   }
+  // }
 ];
 
     // {
