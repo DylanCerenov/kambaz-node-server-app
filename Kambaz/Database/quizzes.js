@@ -17,9 +17,9 @@ export default [
     oneQuestionAtATime: "Yes",
     webcamRequired: "No",
     lockQuestionsAfterAnswering: "No",
-    dueDate: { year: 2025, month: 4, day: 10, hour: 0, minute: 0 },
+    dueDate: { year: 2025, month: 4, day: 30, hour: 12, minute: 0 },
     availableDate: { year: 2025, month: 4, day: 1, hour: 0, minute: 0 },
-    untilDate: { year: 2025, month: 4, day: 11, hour: 0, minute: 0 },
+    untilDate: { year: 2025, month: 5, day: 1, hour: 4, minute: 0 },
     questions: [
       {
         questionId: "Q1-MC1",
