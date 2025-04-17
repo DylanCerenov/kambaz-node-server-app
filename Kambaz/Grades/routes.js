@@ -9,8 +9,8 @@ export default function GradesRoutes(app) {
 
   // Create
   app.post("/api/grades/submit", (req, res) => {
-    const { quizId, userId, score, answers } = req.body; 
-    const grade = gradesDao.submitGrade(quizId, userId, score, answers);
+    const { quizId, userId, attemptsCount, score, answers } = req.body; 
+    const grade = gradesDao.submitGrade(quizId, userId, attemptsCount, score, answers);
     res.json(grade); 
   });
 

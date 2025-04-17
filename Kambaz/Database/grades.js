@@ -2,6 +2,7 @@ export default [
   {
     "quizId": "Q1",
     "userId": "234",
+    "attemptsCount": 1,
     "score": 10,
     "answers": {
         "Q1-MC1": "choiceB",

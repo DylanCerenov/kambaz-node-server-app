@@ -5,8 +5,8 @@ export function findAllGrades() {
   return grades; 
 }
 
-export function submitGrade(quizId, userId, score, answers) {
-  const newGrade = {quizId, userId, score, answers};
+export function submitGrade(quizId, userId, attemptsCount, score, answers) {
+  const newGrade = {quizId, userId, attemptsCount, score, answers};
   Database.grades = [...Database.grades, newGrade];
   return newGrade; 
 }
