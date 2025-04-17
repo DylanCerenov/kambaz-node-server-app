@@ -128,7 +128,7 @@ export default [
     webcamRequired: "No",
     lockQuestionsAfterAnswering: "Yes",
     dueDate: { year: 2025, month: 4, day: 20, hour: 0, minute: 0 },
-    availableDate: { year: 2025, month: 4, day: 18, hour: 0, minute: 0 },
+    availableDate: { year: 2025, month: 4, day: 28, hour: 0, minute: 0 },
     untilDate: { year: 2025, month: 4, day: 21, hour: 0, minute: 0 },
     questions: []
   },
@@ -173,9 +173,9 @@ export default [
     oneQuestionAtATime: "Yes",
     webcamRequired: "Yes",
     lockQuestionsAfterAnswering: "Yes",
-    dueDate: { year: 2025, month: 5, day: 5, hour: 0, minute: 0 },
-    availableDate: { year: 2025, month: 5, day: 1, hour: 0, minute: 0 },
-    untilDate: { year: 2025, month: 5, day: 6, hour: 0, minute: 0 },
+    dueDate: { year: 2025, month: 4, day: 5, hour: 0, minute: 0 },
+    availableDate: { year: 2025, month: 4, day: 1, hour: 0, minute: 0 },
+    untilDate: { year: 2025, month: 4, day: 6, hour: 0, minute: 0 },
     questions: []
   }
 ];
