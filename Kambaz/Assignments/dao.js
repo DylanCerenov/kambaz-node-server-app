@@ -6,7 +6,6 @@ import { v4 as uuidv4 } from "uuid";
 
 export function findAssignmentsForCourse(courseName) {
   const { assignments } = Database; 
-  // Compare by the course name, because using the UUID is inconvenient. 
   return assignments.filter((assignment) => assignment.course === courseName);
 }
 
