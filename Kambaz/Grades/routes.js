@@ -8,10 +8,21 @@ export default function GradesRoutes(app) {
   });
 
   // Create
-  app.post("/api/grades/submit", (req, res) => {
-    const { quizId, userId, attemptsCount, score, answers } = req.body; 
-    const grade = gradesDao.submitGrade(quizId, userId, attemptsCount, score, answers);
-    res.json(grade); 
+  app.post("/api/grades/submit", async (req, res) => {
+    const { quizId, userId, score, answers, submissionTime } = req.body; 
+
+    const existingGrade = gradesDao.findGrade(quizId, userId);
+    if (existingGrade) {
+      const existingAttemptsCount = existingGrade.attemptsCount;
+      console.log("sure it exists, and existingGrade.attemptsCount=" + existingGrade.attemptsCount);
+      const attemptsCount = existingAttemptsCount + 1;
+      const grade = await gradesDao.updateGrade(quizId, userId, { quizId, userId, attemptsCount, score, answers, submissionTime });
+      res.send(grade);
+      console.log(gradesDao.findGrade(quizId, userId));
+    } else {
+      const grade = gradesDao.submitGrade(quizId, userId, 1, score, answers, submissionTime);
+      res.json(grade); 
+    }
   });
 
   // Read
