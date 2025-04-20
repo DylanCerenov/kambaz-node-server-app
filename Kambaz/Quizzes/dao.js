@@ -1,6 +1,14 @@
 import Database from "../Database/index.js";
 import { v4 as uuidv4 } from "uuid";
 
+function calculatePoints(quiz) {
+  let total = 0; 
+  quiz.questions.forEach((question) => {
+    total += question.points; 
+  })
+  return total; 
+}
+
 export function findQuizzesForCourse(cid) {
   const { quizzes } = Database; 
   return quizzes.filter((quiz) => quiz.course === cid);
@@ -34,6 +42,9 @@ export function updateQuizQuestion(quizId, questionId, questionUpdates) {
   if (!question) return null;
 
   Object.assign(question, questionUpdates);
+
+  quiz.points = calculatePoints(quiz);
+  
   return quiz;
 }
 
@@ -50,6 +61,8 @@ export function createQuizQuestion(quizId, question) {
     quiz.questions = [question]
   }
 
+  quiz.points = calculatePoints(quiz);
+
   return quiz;
 }
 
@@ -63,5 +76,8 @@ export function deleteQuizQuestion(quizId, questionId) {
   if (!question) return null;
 
   quiz.questions = quiz.questions.filter((question) => question.questionId !== questionId);
+
+  quiz.points = calculatePoints(quiz);
+
   return quiz;
 }
